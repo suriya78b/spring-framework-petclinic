@@ -29,18 +29,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'deployPackage'
     publishLocation: 'Container'
-
-- stage: Deploy
-  displayName: Deploy WebApp
-jobs:  
-- deployment: VMDeploy
-  displayName: web
-  environment:
-    name:  Dev
-    resourceType: VirtualMachine
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - script: echo my first deployment
-
