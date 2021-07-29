@@ -45,7 +45,8 @@ stages:
     pool:
       vmImage: ubuntu-latest
     environment: 
-      resourceName: Dev
+      name: Dev
+      resourceName: LINUXVM
       resourceType: VirtualMachine
       tags: web
     strategy:
