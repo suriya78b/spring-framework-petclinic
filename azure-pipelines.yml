@@ -47,6 +47,7 @@ stages:
     environment: 
       resourceName: Dev
       resourceType: VirtualMachine
+      tags: web
     strategy:
       runOnce:
         deploy:
